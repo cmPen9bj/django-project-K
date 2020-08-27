@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class = "page">
+  <view class = "title">K线查询</view>
+  <input class = "code" bindinput="bindKeyInput" placeholder="请输入股票代码"></input>
+  <picker mode = "date" vale = "{{start_date}}" class = "row" bindchange="bindStartChange">
+    <view class = "picker">
+      起始日期：{{start_date}}
+    </view>
+  </picker>
+  <picker mode = "date" vale = "{{end_date}}" class = "row" bindchange="bindEndChange">
+    <view class = "picker">
+      结束日期：{{end_date}}
+    </view>
+  </picker>
+  <button bindtap="search" type="primary">查询</button>
+  <image src="{{codeUrl}}" mode="widthFix" bindtap="clickImg"></image>
+</view>
