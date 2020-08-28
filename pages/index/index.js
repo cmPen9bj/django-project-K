@@ -27,7 +27,7 @@ Page({
   search:function() {
     let that = this
     wx.request({
-      url: 'http://127.0.0.1:8000/search/?code='+this.data.code+'&start_date='+this.data.start_date+'&end_date='+this.data.end_date,
+      url: 'http://33d853884q.oicp.vip/search/?code='+this.data.code+'&start_date='+this.data.start_date+'&end_date='+this.data.end_date,
       method:"GET",
       responseType:"arraybuffer",
       success:function(resp) {

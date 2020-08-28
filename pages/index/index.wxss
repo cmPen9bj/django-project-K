@@ -1,1 +1,11 @@
 /**index.wxss**/
+.page {
+      padding: 35rpx;
+}
+
+.title {
+      font-size: 40rpx;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 30rpx;
+}
